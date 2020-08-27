@@ -14,5 +14,7 @@ handle_req_4 -> 2m18s
 handle_req_5 -> 5m01s
 ```
 
+These times only include building the rust146hang lib, not the dependencies.
+
 (Caveat: unscientific timings, these are not averaged over multiple
 runs or anything.)
