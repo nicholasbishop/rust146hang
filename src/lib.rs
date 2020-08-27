@@ -21,8 +21,12 @@ async fn handle_req_4(pool: &Pool) {
     handle_req_3(pool).await;
 }
 
+async fn handle_req_5(pool: &Pool) {
+    handle_req_3(pool).await;
+}
+
 async fn handle_req_final(pool: web::Data<Pool>) -> impl Responder {
-    handle_req_4(pool.get_ref()).await;
+    handle_req_5(pool.get_ref()).await;
     HttpResponse::Ok().finish()
 }
 
